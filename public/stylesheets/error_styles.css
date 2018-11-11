@@ -1,0 +1,77 @@
+:root {
+    background: url("disaster-girl.jpg") no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+}
+
+.layout {
+    height: 100vh;
+    background:rgba(0,0,0,0.5);
+}
+
+.message-section {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    margin-top: 10em;
+    margin-left: 5em;
+    border-radius: 20px;
+    animation-name: animateright;
+    animation-duration: 0.7s;
+    background: rgba(0,0,0,0.6);
+}
+
+@keyframes animateright {
+    from {
+        left: -700px;
+    }
+
+    to {
+        left: 0;
+    }
+
+}
+
+.message-section .error-code {
+    display: block;
+    margin-top: 0.5em;      
+    font-size: 26px;
+    text-align: center;
+    color: rgb(252, 182, 5);
+}
+
+.message-section .message {
+    display: block;
+    margin-top: 2em;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(252, 244, 15);
+}
+
+
+
+.message-section .help-block {
+    margin-top: 2em;
+    text-align: center;
+    color: rgb(252, 244, 15);
+    
+}
+
+#home {
+    display: inline-block;
+    margin-left: 1em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #000000;
+    background: rgb(252, 244, 15);
+    transition: all 0.4s;
+}
+
+
+#home:hover {
+    background: rgb(252, 182, 5);   
+}

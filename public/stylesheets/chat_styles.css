@@ -1,0 +1,139 @@
+:root {
+    background: url("fly.jpeg") repeat;
+    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.chat-window {
+    position: absolute;
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: rgba(255, 247, 191, 0.7);
+    animation-name: animatetop;
+    animation-duration: 0.7s;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@keyframes animatetop {
+    from {
+        top: -500px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chat-header {
+    margin-top: 0.2em;
+}
+
+.username input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: rgb(255, 252, 232);
+}
+
+.username input:focus {
+    border: 1px solid rgb(45, 199, 255);
+}
+
+.message-box {
+    margin-top: 0.4em;
+}
+
+.message {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;  
+    border-radius: 3px;
+    resize: none;
+    color: black;
+    font-size: 14px;
+    background: rgb(255, 252, 232);
+} 
+
+.message:focus {
+    border: 1px solid rgb(45, 199, 255);
+}
+
+.submit-box {
+    margin-top: 0.3em;
+}
+
+#submit-button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 3px;
+    background: rgb(44, 123, 249);
+    transition:all 0.3s;
+}
+
+#submit-button:hover {
+    background: rgb(2, 98, 252);
+}
+
+.placehold {
+    width: 100%;
+    height: 15px;
+    margin-top: 0.2em;
+}
+
+.last-messages {
+    position: absolute;
+    width: 40%;   
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 280px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: rgba(255, 247, 191, 0.8);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.last-messages-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.last-messages-body {
+    width: 100%;
+    height: 250px;
+    overflow: scroll;
+}
+
+
+@media screen and (max-width: 800px) {
+    .chat-window, .last-messages {
+        width: 90%;
+    }    
+}
+
+
+
+
+
